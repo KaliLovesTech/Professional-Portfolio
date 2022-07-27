@@ -10,15 +10,15 @@
 
 body {
     background: #fafafa;
-    background-image: url("/img/IMG1.jpg");
+    /* background-image: url("/img/IMG1.jpg");
     /* background: rgba(0, 0, 0, 0.6) url("/img/IMG.jpg"); */
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
-    background-blend-mode: darken;
+    background-blend-mode: darken; */
 }
 
 .navbar {
-    height: 100vh;
+    height: 40vh;
     width: 100%;
 }
 
@@ -76,12 +76,58 @@ button:hover {
 
     
 /* Home Section */
-.home-section-right {
+
+.home-section-main {
+    width: 100%;
+    min-height: 300px;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
+    display: -webkit-flex;
+    text-align: center;
     justify-content: center;
-    margin-bottom: 200px;
+    
 }
+
+/* sets the containers side by side */
+.home-section-left,
+.home-section-right {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* tells home section left to cover half of the container and center all text */
+.home-section-left {
+    width: 50%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* tells home section right to cover half of the container and center all text */
+.home-section-right {
+    width: 50%;
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 80px;
+}
+
+/* image in home section */
+.home-section-left img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* home section right is the text area */
+/* .home-section-right { */
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center;
+    margin-bottom: 200px; */
+/* } */
+
+/* home section left is the picture area */
+
+/* text animation */
 
 .wrapper {
     display: inline-flex;
@@ -89,12 +135,12 @@ button:hover {
 
 .wrapper .static-text {
     color: black;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 400;
 }
 
 .wrapper .dynamic-text {
-    margin-left: 15px;
+    margin-right: 150px;
     height: 90px;
     line-height: 90px;
     overflow: hidden;
