@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+/* set up color scheme variables */
+
+:root {
+  --light-color: #f7f6f6;
+  --gray: #a9a8a9;
+  --purple-color: #82657e;
+  --light-purple: #93798f;
+  --dark-purple: #26222b;
+}
+
 html {
   scroll-behavior: smooth;
   /* font-size: 16px; */
