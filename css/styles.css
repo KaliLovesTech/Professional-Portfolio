@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* global styles */
 * {
   margin: 0;
   padding: 0;
@@ -9,39 +10,86 @@
 /* set up color scheme variables */
 
 :root {
-  --light-color: #f7f6f6;
-  --gray: #a9a8a9;
-  --purple-color: #82657e;
-  --light-purple: #93798f;
-  --dark-purple: #26222b;
+  --accent-color: #f15025;
+  --white: #ffffff;
+  --platinum: #e6e8e6;
+  --light-gray: #ced0ce;
+  --black: #191919;
 }
 
 html {
   scroll-behavior: smooth;
-  /* font-size: 16px; */
+  font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
 
 body {
-  background-color: #082032;
+  background-color: var(--platinum);
   /* height: 100vh; */
   min-height: 100vh;
   width: 100vw;
 }
 
+/* Navigation Bar Styling starts */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: var(--black);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+  transition: 0.3s;
+}
+
+button {
+  margin-top: 8px;
+  background-color: var(--accent-color);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: var(--black);
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+/* nav bar styling ends */
+
 /* logo style starts */
 
 .logo span {
-  color: #082032;
+  color: var();
 }
 
 .content {
   position: relative;
-  background-color: black;
+  background-color: var(--light-gray);
 }
 
 .content h2 {
-  color: #fff;
+  color: var(--accent-color);
   font-size: 3em;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -50,12 +98,12 @@ body {
 .content h2:nth-child(1) {
   color: transparent;
   /* change the colors of the letter outline */
-  -webkit-text-stroke: 2px red;
+  -webkit-text-stroke: 2px var(--black);
 }
 
 .content h2:nth-child(2) {
   /* changes the color of the liquid on first letter  */
-  color: white;
+  color: var(--accent-color);
   animation: animate 4s ease-in-out infinite;
 }
 
@@ -92,62 +140,9 @@ body {
 
 /* logo style ends */
 
-/* Navigation Bar Styling */
+/* home styling starts */
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 8px;
-  padding-right: 10%;
-  padding-left: 10%;
-}
-
-nav ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px 20px;
-}
-
-nav ul li a {
-  color: #c7c7c7;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  color: red;
-  transition: 0.3s;
-}
-
-button {
-  margin-top: 8px;
-  background-color: red;
-  border: none;
-  padding: 12px 30px;
-  border-radius: 30px;
-  color: #c7c7c7;
-  font-weight: bold;
-  font-size: 1.5rem;
-  transition: 0.5s;
-}
-
-button:hover {
-  transform: scale(1.2);
-  cursor: pointer;
-}
-
-/* .logo {
-  color: #c7c7c7;
-  text-decoration: none;
-} */
-
-/* Home Section styling */
-span {
-  color: red;
-}
-
+/* home container styling  */
 .home-container {
   height: 100vh;
   display: flex;
@@ -161,6 +156,7 @@ span {
 .home-button-container {
   padding-top: 20px;
 }
+/* home container styling ends */
 
 /* Animated Text styling */
 .wrapper {
@@ -168,7 +164,7 @@ span {
 }
 
 .wrapper .static-txt {
-  color: #c7c7c7;
+  color: var(--black);
   font-size: 60px;
   font-weight: 400;
 }
@@ -182,7 +178,7 @@ span {
 
 .dynamic-txts li {
   list-style: none;
-  color: #ff4c29;
+  color: var(--accent-color);
   font-size: 60px;
   font-weight: 500;
   top: 0;
@@ -207,7 +203,7 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #082032;
+  background-color: var(--platinum);
   border-left: 2px solid #ff4c29;
   animation: typing 3s steps(13) infinite;
 }
@@ -221,6 +217,9 @@ span {
     left: 0;
   }
 }
+/* animated text ends */
+
+/* home styling ends */
 
 /* About Me section styling */
 
