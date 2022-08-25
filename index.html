@@ -32,7 +32,7 @@
         <li><a href="#">Projects</a></li>
         <li><a href="#">Blog</a></li>
       </ul>
-      <button type="button">Hire Me</button>
+      <button id="button-nav" type="button">Contact Me</button>
     </nav>
 
     <!-- Home Section -->
@@ -49,7 +49,7 @@
       </div>
 
       <div class="home-button-container">
-        <button type="button">About Me</button>
+        <button type="button">Resume</button>
       </div>
     </section>
 
@@ -91,7 +91,8 @@
       <div class="container-about">
         <div class="content-section">
           <div class="title">
-            <h1>About Me</h1>
+            <h1>About <span>Me</span></h1>
+            <hr class="line" />
           </div>
           <div class="content">
             <h3>
@@ -107,6 +108,7 @@
               quibusdam ipsa. Nesciunt officiis.
             </p>
             <div class="button">
+                <!-- link to blog about why programming -->
               <a href="#">Read More</a>
             </div>
           </div>
@@ -141,7 +143,8 @@
 
     <section class="services-container">
       <div class="services-header">
-        <h1>My Projects</h1>
+        <h1><span>Some</span> Projects I've Built</h1>
+        <hr class="line2" />
       </div>
       <div class="services">
         <div class="service-box background-1">
@@ -207,18 +210,21 @@
           </div>
         </div>
       </div>
+      <button type="button" id="button-projects" >More</button>
     </section>
 
     <!-- Projects Section ends -->
 
     <!-- Contact Me Section -->
     <div class="container-contact">
+      <h1>Let's get in <span>touch</span></h1>
+      <hr class="line3" />
       <form id="contact" action="" method="post">
-        <h3>Colorlib Contact Form</h3>
-        <h4>Contact us for custom quote</h4>
+        <!-- <h3>Colorlib Contact Form</h3>
+        <h4>Contact us for custom quote</h4> -->
         <fieldset>
           <input
-            placeholder="Your name"
+            placeholder="Name"
             type="text"
             tabindex="1"
             required
@@ -227,7 +233,7 @@
         </fieldset>
         <fieldset>
           <input
-            placeholder="Your Email Address"
+            placeholder="Email Address"
             type="email"
             tabindex="2"
             required
@@ -235,19 +241,19 @@
         </fieldset>
         <fieldset>
           <input
-            placeholder="Your Phone Number (optional)"
+            placeholder="Phone Number"
             type="tel"
             tabindex="3"
             required
           />
         </fieldset>
-        <fieldset>
+        <!-- <fieldset>
           <input
             placeholder="Your Web Site (optional)"
             type="url"
             tabindex="4"
             required
-          />
+          /> -->
         </fieldset>
         <fieldset>
           <textarea
@@ -266,18 +272,25 @@
             Submit
           </button>
         </fieldset>
-        <p class="copyright">
+        <!-- <p class="copyright">
           Designed by
           <a href="https://colorlib.com" target="_blank" title="Colorlib"
             >Colorlib</a
           >
-        </p>
+        </p> -->
       </form>
     </div>
+
+    <footer>
+        <div class="copyright">
+          <a href="#" >Designed & Built by Kali Love</a>
+        </div>
+    </footer>
 
     <!-- javascrpit file -->
     <script src="/js/script.js"></script>
 
+    <!-- ionicons script -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
