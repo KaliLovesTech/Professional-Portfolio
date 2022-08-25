@@ -379,10 +379,10 @@ button:hover {
   width: 80%;
   height: auto;
   /* color: var(--accent-color); */
-  filter: invert(0%) sepia(65%) saturate(80%) hue-rotate(101deg)
+  /* filter: invert(0%) sepia(65%) saturate(80%) hue-rotate(101deg)
     brightness(102%) contrast(89%) opacity(100%);
   -webkit-filter: invert(0%) sepia(65%) saturate(80%) hue-rotate(101deg)
-    brightness(102%) contrast(89%) opacity(100%);
+    brightness(102%) contrast(89%) opacity(100%); */
   /* filter: var(--accent-color) (100%);
   -webkit-filter: var(--accent-color) (100%); */
 }
