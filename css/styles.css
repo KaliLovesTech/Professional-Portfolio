@@ -611,7 +611,21 @@ hr.line2 {
 
 .service-button {
   background: var(--bg-dark-blue);
-  width: 40%;
+  width: 20%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 20px;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+  -webkit-transition: transform 200ms ease, opacity 200ms ease;
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+
+.service-button2 {
+  background: var(--bg-dark-blue);
+  width: 20%;
   margin: 0 auto;
   padding: 5px;
   border-radius: 20px;
@@ -623,6 +637,11 @@ hr.line2 {
 }
 
 .service-button a {
+  text-decoration: none;
+  color: var(--text-color2);
+}
+
+.service-button2 a {
   text-decoration: none;
   color: var(--text-color2);
 }
@@ -658,6 +677,14 @@ hr.line2 {
 }
 
 .service-box:hover .service-button {
+  opacity: 1;
+  -webkit-transform: translateY(-40px);
+  transform: translateY(-40px);
+  -webkit-transition-delay: 150ms;
+  transition-delay: 150ms;
+}
+
+.service-box:hover .service-button2 {
   opacity: 1;
   -webkit-transform: translateY(-40px);
   transform: translateY(-40px);
