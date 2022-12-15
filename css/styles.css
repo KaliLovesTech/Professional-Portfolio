@@ -51,6 +51,12 @@ body::-webkit-scrollbar {
 
 /* Navigation Bar Styling starts */
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -132,31 +138,11 @@ button:hover {
 @keyframes animate {
   0%,
   100% {
-    clip-path: polygon(
-      0% 45%,
-      16% 44%,
-      33% 50%,
-      54% 60%,
-      70% 61%,
-      84% 59%,
-      100% 52%,
-      100% 100%,
-      0% 100%
-    );
+    clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
   }
 
   50% {
-    clip-path: polygon(
-      0% 60%,
-      15% 65%,
-      34% 66%,
-      51% 62%,
-      67% 50%,
-      84% 45%,
-      100% 46%,
-      100% 100%,
-      0% 100%
-    );
+    clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
   }
 }
 
@@ -546,8 +532,7 @@ hr.line2 {
 }
 
 .services .background-1 {
-  background: url("/img/mentor_img.png"),
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background: url("/img/mentor_img.png"), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-blend-mode: overlay;
   background-size: cover;
   background-repeat: none;
@@ -555,8 +540,7 @@ hr.line2 {
 }
 
 .services .background-2 {
-  background: url("/img/webdev.png"),
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background: url("/img/webdev.png"), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-blend-mode: overlay;
   background-size: cover;
   background-repeat: none;
@@ -564,8 +548,7 @@ hr.line2 {
 }
 
 .services .background-3 {
-  background: url("/img/consulting.png"),
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background: url("/img/consulting.png"), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-blend-mode: overlay;
   background-size: cover;
   background-repeat: none;
