@@ -63,15 +63,15 @@ nav {
   justify-content: space-between;
   padding-top: 8px;
   padding-bottom: 10px;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 15px;
+  padding-left: 80px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 nav ul li {
   list-style: none;
   display: inline-block;
-  padding: 10px 20px;
+  padding-left: 60px;
 }
 
 nav ul li a {
@@ -84,6 +84,12 @@ nav ul li a:hover {
   color: var(--accent-color);
   transition: 0.3s;
 }
+
+/* button styling */
+
+/* .nav-contact {
+  padding-left: 500px;
+} */
 
 #button-nav {
   padding: 8px 12px;
